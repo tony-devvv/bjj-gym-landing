@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<title>AnacondaBJJ Academy — Brand Guidelines</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=block" rel="stylesheet">
+<style>
+@page{size:297mm 210mm;margin:0}
+:root{--jungle:#0D110E;--graphite:#1C221E;--green:#1E7A46;--green-dark:#145C33;--lime:#B5E64B;--gold:#D9A441;--moss:#9AA39C;--ash:#6B716C;--stone:#E3E2DA;--mat:#F5F4EE;--d:'Barlow Condensed','Arial Narrow',sans-serif;--b:Inter,system-ui,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{font-family:var(--b);color:var(--jungle);background:#666}
+.page{width:297mm;height:210mm;break-after:page;position:relative;overflow:hidden;padding:18mm 20mm 16mm;background:var(--mat)}
+.page.dark{background:var(--jungle);color:var(--mat)}
+.page.green{background:var(--green);color:#fff}
+.scales{background-color:var(--jungle);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='48'%3E%3Cpath d='M14 0h28l14 24-14 24H14L0 24z' fill='none' stroke='%23B5E64B' stroke-opacity='.07' stroke-width='1.5'/%3E%3C/svg%3E")}
+h1,h2,h3,.eyebrow,.btn,.num{font-family:var(--d);text-transform:uppercase}
+h1{font-weight:800;font-size:78pt;line-height:.9;letter-spacing:-.01em}
+h2{font-weight:800;font-size:40pt;line-height:.95;margin-bottom:6mm}
+h3{font-weight:700;font-size:15pt;line-height:1.1;margin-bottom:2mm}
+.eyebrow{font-weight:700;font-size:9.5pt;letter-spacing:.16em;color:var(--green);margin-bottom:3mm;display:block}
+.dark .eyebrow,.scales .eyebrow{color:var(--lime)}
+p{font-size:10pt;line-height:1.55}
+.muted{color:var(--ash)}.dark .muted{color:var(--moss)}
+.lime{color:var(--lime)}.gr{color:var(--green)}
+.foot{position:absolute;left:20mm;right:20mm;bottom:8mm;display:flex;justify-content:space-between;font-size:7.5pt;color:var(--ash);font-family:var(--d);letter-spacing:.14em;text-transform:uppercase;font-weight:600}
+.dark .foot{color:var(--moss)}
+.cols{display:grid;gap:8mm}
+.c2{grid-template-columns:1fr 1fr}.c3{grid-template-columns:repeat(3,1fr)}.c4{grid-template-columns:repeat(4,1fr)}
+.card{background:#fff;border:1px solid var(--stone);border-radius:2mm;padding:5mm}
+.dark .card{background:var(--graphite);border-color:rgba(245,244,238,.12)}
+ul{padding-left:4.5mm}li{font-size:9.5pt;line-height:1.55;margin-bottom:1mm}
+.no li::marker{content:"✕  ";color:#C0392B}
+.yes li::marker{content:"✓  ";color:var(--green)}
+.dark .yes li::marker{color:var(--lime)}
+.lockup{display:flex;align-items:center;gap:5mm}
+.lockup .wm{font-family:var(--d);text-transform:uppercase;line-height:.95}
+.lockup .wm b{display:block;font-weight:800;font-size:34pt}
+.lockup .wm span{display:block;font-weight:600;font-size:12pt;letter-spacing:.42em;margin-top:1.5mm}
+.btn{display:inline-block;font-weight:700;font-size:12pt;letter-spacing:.06em;padding:3.5mm 6mm;border-radius:1mm}
+.b-lime{background:var(--lime);color:var(--jungle)}.b-green{background:var(--green);color:#fff}.b-ghost{border:2px solid currentColor}
+table{border-collapse:collapse;width:100%;font-size:9pt}
+td,th{padding:2mm 2.5mm;border-bottom:1px solid var(--stone);text-align:left;vertical-align:middle}
+th{font-family:var(--d);text-transform:uppercase;letter-spacing:.08em;font-size:8.5pt;color:var(--ash)}
+.dark td,.dark th{border-color:rgba(245,244,238,.12)}
+.tag{display:inline-block;font-family:var(--d);font-weight:700;font-size:8pt;letter-spacing:.1em;padding:.6mm 2mm;border-radius:.6mm;background:var(--green);color:#fff}
+.tag.f{background:#C0392B}
+code,pre{font-family:Consolas,monospace;font-size:8.5pt}
+</style>
+</head>
+<body>
+
+<!-- 1 COVER -->
+<section class="page scales" style="color:var(--mat);display:flex;flex-direction:column;justify-content:space-between">
+  <div style="position:absolute;right:-30mm;top:-20mm;width:170mm;height:170mm;border-radius:50%;background:radial-gradient(circle,rgba(30,122,70,.55),transparent 65%)"></div>
+  <div class="lockup" style="position:relative">
+    <img src="../assets/anaconda-symbol.svg" style="width:22mm">
+    <div class="wm"><b style="font-size:20pt">Anaconda<span class="lime" style="display:inline;font-size:inherit;letter-spacing:0;margin:0;font-weight:800">BJJ</span></b><span style="font-size:8pt;letter-spacing:.4em">Academy · Jiu Jitsu</span></div>
+  </div>
+  <div style="position:relative">
+    <span class="eyebrow">Brand guidelines · v1.0 prototipo · Novembre 2026</span>
+    <h1>Stringi.<br>Controlla.<br><span class="lime">Cresci.</span></h1>
+    <p style="margin-top:7mm;max-width:130mm;font-size:12pt;color:var(--moss)">Il sistema visivo e verbale di AnacondaBJJ Academy: logo, colori, tipografia, componenti, fotografia, tono di voce e struttura della landing page.</p>
+  </div>
+  <img src="../assets/anaconda-symbol.svg" style="position:absolute;right:20mm;bottom:22mm;width:105mm">
+</section>
+
+<!-- 2 ABOUT + INDEX -->
+<section class="page">
+  <div class="cols c2" style="gap:16mm;height:100%">
+    <div>
+      <span class="eyebrow">01 · Chi siamo</span>
+      <h2>Tecnica che<br><span class="gr">stringe</span> più<br>della forza.</h2>
+      <p style="font-size:11.5pt;margin-bottom:5mm">AnacondaBJJ Academy è un'accademia di Brazilian Jiu Jitsu per bambini, ragazzi e adulti. Jiu Jitsu serio, ambiente accogliente e un percorso chiaro dalla prima lezione alla cintura nera.</p>
+      <p class="muted" style="margin-bottom:5mm">L'anaconda non colpisce: avvolge, controlla, stringe. È la metafora del Jiu Jitsu — leva e pressione al posto della forza bruta — e richiama l'<b>Anaconda choke</b>, uno strangolamento classico del grappling.</p>
+      <div class="card" style="border-left:4px solid var(--green)">
+        <h3>Posizionamento</h3>
+        <p>Per chi vuole imparare un'arte marziale vera senza sentirsi fuori posto il primo giorno. Ci distinguiamo con il verde in un settore dominato da rosso e nero, e con un primo giorno guidato per ogni età.</p>
+      </div>
+    </div>
+    <div style="background:var(--jungle);color:var(--mat);margin:-18mm -20mm -16mm 0;padding:18mm 20mm">
+      <span class="eyebrow" style="color:var(--lime)">Indice</span>
+      <table style="font-size:11pt;color:var(--mat)">
+        <tr><td class="lime num" style="font-family:var(--d);font-weight:800;font-size:14pt;width:14mm">02</td><td>Logo</td></tr>
+        <tr><td class="lime" style="font-family:var(--d);font-weight:800;font-size:14pt">03</td><td>Colori</td></tr>
+        <tr><td class="lime" style="font-family:var(--d);font-weight:800;font-size:14pt">04</td><td>Uso dei colori e contrasti</td></tr>
+        <tr><td class="lime" style="font-family:var(--d);font-weight:800;font-size:14pt">05</td><td>Tipografia</td></tr>
+        <tr><td class="lime" style="font-family:var(--d);font-weight:800;font-size:14pt">06</td><td>Layout, forme e pattern</td></tr>
+        <tr><td class="lime" style="font-family:var(--d);font-weight:800;font-size:14pt">07</td><td>Componenti</td></tr>
+        <tr><td class="lime" style="font-family:var(--d);font-weight:800;font-size:14pt">08</td><td>Fotografia e movimento</td></tr>
+        <tr><td class="lime" style="font-family:var(--d);font-weight:800;font-size:14pt">09</td><td>Tono di voce</td></tr>
+        <tr><td class="lime" style="font-family:var(--d);font-weight:800;font-size:14pt">10</td><td>Struttura della landing</td></tr>
+        <tr><td class="lime" style="font-family:var(--d);font-weight:800;font-size:14pt">11</td><td>Token CSS</td></tr>
+      </table>
+      <p style="margin-top:8mm;font-size:8.5pt;color:var(--moss)">Riferimenti: Sampson Jiu Jitsu Academy (struttura della pagina di prova, tipografia condensata), University of Jiu Jitsu (colore non rosso), Endless Fight Jiu Jitsu (identità estesa a kimono e patch), Gracie Barra (coerenza dei materiali).</p>
+    </div>
+  </div>
+  <div class="foot"><span>AnacondaBJJ Academy</span><span>Brand guidelines · 2</span></div>
+</section>
+
+<!-- 3 LOGO -->
+<section class="page">
+  <span class="eyebrow">02 · Logo</span>
+  <h2>Una A. Un'anaconda. Una presa.</h2>
+  <div class="cols" style="grid-template-columns:1.25fr 1fr;gap:10mm">
+    <div class="cols c2" style="gap:5mm">
+      <div style="background:var(--jungle);border-radius:2mm;height:62mm;display:flex;align-items:center;justify-content:center"><img src="../assets/anaconda-symbol.svg" style="width:46mm"></div>
+      <div style="background:var(--jungle);border-radius:2mm;height:62mm;display:flex;align-items:center;justify-content:center;position:relative">
+        <div style="position:relative;padding:8mm;outline:1px dashed var(--lime);outline-offset:-1px"><img src="../assets/anaconda-symbol.svg" style="width:32mm;display:block"></div>
+        <span style="position:absolute;bottom:3mm;font-size:7pt;color:var(--moss);font-family:var(--d);letter-spacing:.12em">AREA DI RISPETTO = ¼ DEL SIMBOLO</span>
+      </div>
+      <div style="grid-column:span 2;background:var(--jungle);color:var(--mat);border-radius:2mm;padding:6mm 8mm" class="lockup">
+        <img src="../assets/anaconda-symbol.svg" style="width:24mm">
+        <div class="wm"><b>Anaconda<span style="display:inline;font-size:inherit;letter-spacing:0;margin:0;font-weight:800;color:var(--lime)">BJJ</span></b><span>Academy · Jiu Jitsu</span></div>
+      </div>
+      <div style="grid-column:span 2;background:#fff;border:1px solid var(--stone);border-radius:2mm;padding:6mm 8mm" class="lockup">
+        <img src="../assets/anaconda-symbol.svg" style="width:24mm">
+        <div class="wm"><b>Anaconda<span style="display:inline;font-size:inherit;letter-spacing:0;margin:0;font-weight:800;color:var(--green)">BJJ</span></b><span>Academy · Jiu Jitsu</span></div>
+      </div>
+    </div>
+    <div>
+      <h3>Il concetto</h3>
+      <p style="margin-bottom:4mm">L'esagono è una scaglia di serpente e la forma di una patch da kimono. Dentro, la A dell'accademia; l'anaconda passa sopra la gamba sinistra e dietro la destra, come una presa che si chiude.</p>
+      <h3>Versioni</h3>
+      <ul style="margin-bottom:4mm">
+        <li><b>Simbolo</b> — avatar social, favicon, patch, ricamo</li>
+        <li><b>Orizzontale su scuro</b> — header del sito, insegne</li>
+        <li><b>Orizzontale su chiaro</b> — documenti, moduli</li>
+        <li><b>Monocromo</b> Jungle Black — ricamo, timbri</li>
+      </ul>
+      <h3>Dimensioni minime</h3>
+      <p style="margin-bottom:4mm">Simbolo 32 px / 10 mm · Orizzontale 140 px / 35 mm</p>
+      <h3>Da evitare</h3>
+      <ul class="no">
+        <li>Ruotare o deformare l'esagono</li>
+        <li>Separare il serpente dalla A</li>
+        <li>Ombre, bagliori, contorni aggiunti</li>
+        <li>Logo principale su fondo chiaro</li>
+        <li>Riscrivere il nome con un altro font</li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot"><span>AnacondaBJJ Academy</span><span>Brand guidelines · 3</span></div>
+</section>
+
+<!-- 4 COLORS -->
+<section class="page dark">
+  <span class="eyebrow">03 · Colori</span>
+  <h2>Giungla, non sangue.</h2>
+  <div class="cols c3" style="gap:5mm;margin-bottom:5mm">
+    <div style="background:#0D110E;border:1px solid rgba(245,244,238,.2);border-radius:2mm;height:72mm;padding:5mm;display:flex;flex-direction:column;justify-content:flex-end"><h3>Jungle Black</h3><p>#0D110E · 13 17 14</p><p class="muted" style="font-size:8.5pt">Fondo principale. Mai #000.</p></div>
+    <div style="background:#1E7A46;border-radius:2mm;height:72mm;padding:5mm;display:flex;flex-direction:column;justify-content:flex-end;color:#fff"><h3>Constrictor Green</h3><p>#1E7A46 · 30 122 70</p><p style="font-size:8.5pt;opacity:.85">Il colore del brand. Bottoni su chiaro, fasce.</p></div>
+    <div style="background:#B5E64B;border-radius:2mm;height:72mm;padding:5mm;display:flex;flex-direction:column;justify-content:flex-end;color:var(--jungle)"><h3>Venom Lime</h3><p>#B5E64B · 181 230 75</p><p style="font-size:8.5pt">Accento e CTA. Solo su scuro.</p></div>
+  </div>
+  <div class="cols" style="grid-template-columns:repeat(8,1fr);gap:3mm">
+    <div style="background:#145C33;border-radius:1.5mm;height:44mm;padding:3mm;display:flex;flex-direction:column;justify-content:flex-end;color:#fff"><b style="font-family:var(--d);font-size:10pt;text-transform:uppercase">Deep Green</b><span style="font-size:7.5pt">#145C33</span></div>
+    <div style="background:#D9A441;border-radius:1.5mm;height:44mm;padding:3mm;display:flex;flex-direction:column;justify-content:flex-end;color:var(--jungle)"><b style="font-family:var(--d);font-size:10pt;text-transform:uppercase">Belt Gold</b><span style="font-size:7.5pt">#D9A441</span></div>
+    <div style="background:#1C221E;border:1px solid rgba(245,244,238,.15);border-radius:1.5mm;height:44mm;padding:3mm;display:flex;flex-direction:column;justify-content:flex-end"><b style="font-family:var(--d);font-size:10pt;text-transform:uppercase">Graphite</b><span style="font-size:7.5pt">#1C221E</span></div>
+    <div style="background:#9AA39C;border-radius:1.5mm;height:44mm;padding:3mm;display:flex;flex-direction:column;justify-content:flex-end;color:var(--jungle)"><b style="font-family:var(--d);font-size:10pt;text-transform:uppercase">Moss</b><span style="font-size:7.5pt">#9AA39C</span></div>
+    <div style="background:#6B716C;border-radius:1.5mm;height:44mm;padding:3mm;display:flex;flex-direction:column;justify-content:flex-end;color:#fff"><b style="font-family:var(--d);font-size:10pt;text-transform:uppercase">Ash</b><span style="font-size:7.5pt">#6B716C</span></div>
+    <div style="background:#E3E2DA;border-radius:1.5mm;height:44mm;padding:3mm;display:flex;flex-direction:column;justify-content:flex-end;color:var(--jungle)"><b style="font-family:var(--d);font-size:10pt;text-transform:uppercase">Stone</b><span style="font-size:7.5pt">#E3E2DA</span></div>
+    <div style="background:#F5F4EE;border-radius:1.5mm;height:44mm;padding:3mm;display:flex;flex-direction:column;justify-content:flex-end;color:var(--jungle)"><b style="font-family:var(--d);font-size:10pt;text-transform:uppercase">Mat White</b><span style="font-size:7.5pt">#F5F4EE</span></div>
+    <div style="background:#FFFFFF;border-radius:1.5mm;height:44mm;padding:3mm;display:flex;flex-direction:column;justify-content:flex-end;color:var(--jungle)"><b style="font-family:var(--d);font-size:10pt;text-transform:uppercase">White</b><span style="font-size:7.5pt">#FFFFFF</span></div>
+  </div>
+  <p class="muted" style="margin-top:5mm;max-width:200mm">Belt Gold si usa solo per traguardi (cinture, gradi, stelle delle recensioni). Il rosso non fa parte della palette: è il colore di quasi tutte le accademie, il verde ci rende riconoscibili.</p>
+  <div class="foot"><span>AnacondaBJJ Academy</span><span>Brand guidelines · 4</span></div>
+</section>
+
+<!-- 5 COLOR USAGE -->
+<section class="page">
+  <span class="eyebrow">04 · Uso dei colori e contrasti</span>
+  <h2>Proporzioni e leggibilità</h2>
+  <div style="display:flex;height:16mm;border-radius:2mm;overflow:hidden;margin-bottom:2mm">
+    <div style="flex:55;background:var(--jungle)"></div><div style="flex:25;background:var(--stone)"></div><div style="flex:12;background:var(--green)"></div><div style="flex:6;background:var(--lime)"></div><div style="flex:2;background:var(--gold)"></div>
+  </div>
+  <div style="display:flex;font-family:var(--d);font-weight:700;font-size:9pt;text-transform:uppercase;letter-spacing:.06em;margin-bottom:7mm">
+    <span style="flex:55">Jungle Black + Graphite 55%</span><span style="flex:25">Mat White + Stone 25%</span><span style="flex:12">Green 12%</span><span style="flex:8">Lime 6% · Gold 2%</span>
+  </div>
+  <div class="cols" style="grid-template-columns:1.5fr 1fr;gap:10mm">
+    <table>
+      <tr><th>Esempio</th><th>Testo</th><th>Fondo</th><th>Rapporto</th><th>WCAG</th></tr>
+      <tr><td style="background:#0D110E;color:#B5E64B;font-family:var(--d);font-weight:800">PROVA GRATIS</td><td>Lime</td><td>Jungle Black</td><td>13.03</td><td><span class="tag">AAA</span></td></tr>
+      <tr><td style="background:#B5E64B;color:#0D110E;font-family:var(--d);font-weight:800">PROVA GRATIS</td><td>Jungle Black</td><td>Lime</td><td>13.03</td><td><span class="tag">AAA</span></td></tr>
+      <tr><td style="background:#0D110E;color:#D9A441;font-family:var(--d);font-weight:800">★★★★★</td><td>Belt Gold</td><td>Jungle Black</td><td>8.46</td><td><span class="tag">AAA</span></td></tr>
+      <tr><td style="background:#0D110E;color:#9AA39C">Testo secondario</td><td>Moss</td><td>Jungle Black</td><td>7.33</td><td><span class="tag">AAA</span></td></tr>
+      <tr><td style="background:#145C33;color:#fff">Testo bianco</td><td>White</td><td>Deep Green</td><td>8.05</td><td><span class="tag">AAA</span></td></tr>
+      <tr><td style="background:#1E7A46;color:#fff;font-family:var(--d);font-weight:800">PRENOTA</td><td>White</td><td>Constrictor Green</td><td>5.35</td><td><span class="tag">AA</span></td></tr>
+      <tr><td style="background:#F5F4EE;color:#1E7A46;font-weight:600">Link verde</td><td>Green</td><td>Mat White</td><td>4.85</td><td><span class="tag">AA</span></td></tr>
+      <tr><td style="background:#F5F4EE;color:#6B716C">Nota a margine</td><td>Ash</td><td>Mat White</td><td>4.53</td><td><span class="tag">AA</span></td></tr>
+      <tr><td style="background:#F5F4EE;color:#B5E64B;font-weight:700">Lime su chiaro</td><td>Lime</td><td>Mat White</td><td>1.32</td><td><span class="tag f">NO</span></td></tr>
+      <tr><td style="background:#F5F4EE;color:#D9A441;font-weight:700">Oro su chiaro</td><td>Gold</td><td>Mat White</td><td>2.04</td><td><span class="tag f">NO</span></td></tr>
+    </table>
+    <div>
+      <h3>Regole</h3>
+      <ul class="yes" style="margin-bottom:5mm">
+        <li>Un solo bottone lime per schermata</li>
+        <li>Fascia verde piena al massimo una volta per pagina, per la CTA</li>
+        <li>Su chiaro l'accento diventa Constrictor Green</li>
+      </ul>
+      <h3>Da evitare</h3>
+      <ul class="no">
+        <li>Lime o oro su fondo chiaro</li>
+        <li>Lime per paragrafi lunghi</li>
+        <li>Nero puro #000000</li>
+        <li>Rosso, anche come accento</li>
+      </ul>
+      <p class="muted" style="margin-top:5mm;font-size:8.5pt">Rapporti calcolati con la formula WCAG 2.1. AA ≥ 4.5 · AAA ≥ 7.</p>
+    </div>
+  </div>
+  <div class="foot"><span>AnacondaBJJ Academy</span><span>Brand guidelines · 5</span></div>
+</section>
+
+<!-- 6 TYPOGRAPHY -->
+<section class="page dark">
+  <span class="eyebrow">05 · Tipografia</span>
+  <div class="cols" style="grid-template-columns:1.2fr 1fr;gap:12mm">
+    <div>
+      <div style="font-family:var(--d);font-weight:800;font-size:120pt;line-height:.85;text-transform:none">Aa<span class="lime">Bb</span></div>
+      <h3 style="margin-top:4mm;font-size:20pt">Barlow Condensed</h3>
+      <p class="muted">Titoli, etichette, bottoni, numeri · 600 · 700 · 800 · sempre maiuscolo</p>
+      <div style="font-family:var(--d);font-weight:800;font-size:30pt;text-transform:uppercase;margin-top:6mm;line-height:1">Ogni cintura nera<br>è stata una <span class="lime">bianca</span>.</div>
+    </div>
+    <div>
+      <div style="font-family:var(--b);font-weight:600;font-size:96pt;line-height:.9">Aa</div>
+      <h3 style="margin-top:6mm;font-size:20pt">Inter</h3>
+      <p class="muted" style="margin-bottom:6mm">Testo, form, FAQ, footer · 400 · 500 · 600 · 700</p>
+      <p style="font-size:12pt;margin-bottom:4mm">Nessuna esperienza e nessuna attrezzatura richiesta. La prima lezione segue il tuo ritmo: un istruttore ti mostra le basi, poi ti alleni con un compagno del tuo livello.</p>
+      <p class="muted" style="font-size:9pt">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz · 0123456789 · àèéìòù €</p>
+      <div class="card" style="margin-top:6mm"><p style="font-size:9pt">Entrambi i font vengono dal riferimento Sampson e sono gratuiti su Google Fonts. Fallback: Arial Narrow / system-ui.</p></div>
+    </div>
+  </div>
+  <div class="foot"><span>AnacondaBJJ Academy</span><span>Brand guidelines · 6</span></div>
+</section>
+
+<!-- 7 SCALE -->
+<section class="page">
+  <span class="eyebrow">05 · Tipografia</span>
+  <h2>Scala tipografica</h2>
+  <table>
+    <tr><th style="width:24mm">Token</th><th>Esempio</th><th style="width:44mm">Desktop / Mobile</th><th style="width:44mm">Peso · interlinea</th></tr>
+    <tr><td><code>display</code></td><td style="font-family:var(--d);font-weight:800;font-size:40pt;line-height:.95;text-transform:uppercase">Stringi la presa</td><td>72 / 44 px</td><td>800 · 0.95</td></tr>
+    <tr><td><code>h1</code></td><td style="font-family:var(--d);font-weight:800;font-size:30pt;text-transform:uppercase">Programmi per età</td><td>56 / 40 px</td><td>800 · 1.0</td></tr>
+    <tr><td><code>h2</code></td><td style="font-family:var(--d);font-weight:800;font-size:22pt;text-transform:uppercase">Cosa chiedono i principianti</td><td>40 / 30 px</td><td>800 · 1.05</td></tr>
+    <tr><td><code>h3</code></td><td style="font-family:var(--d);font-weight:700;font-size:15pt;text-transform:uppercase">Baby Anaconda · 4–7 anni</td><td>24 / 22 px</td><td>700 · 1.15</td></tr>
+    <tr><td><code>eyebrow</code></td><td style="font-family:var(--d);font-weight:700;font-size:9pt;letter-spacing:.14em;text-transform:uppercase;color:var(--green)">Lezione di prova · Tutte le età</td><td>13 / 12 px · +0.14em</td><td>700</td></tr>
+    <tr><td><code>body-lg</code></td><td style="font-size:12pt">La prima lezione è gratuita, per qualsiasi età e livello.</td><td>19 / 17 px</td><td>400 · 1.6</td></tr>
+    <tr><td><code>body</code></td><td style="font-size:10pt">Porta una maglietta e dei pantaloncini comodi: il kimono te lo prestiamo noi.</td><td>16 / 16 px</td><td>400 · 1.6</td></tr>
+    <tr><td><code>button</code></td><td><span class="btn b-green" style="font-size:10pt;padding:2mm 4mm">Prenota la lezione gratuita</span></td><td>18 / 17 px · +0.06em</td><td>700</td></tr>
+    <tr><td><code>stat</code></td><td style="font-family:var(--d);font-weight:800;font-size:32pt;line-height:1;color:var(--green)">12+ <span style="font-size:11pt;color:var(--jungle)">ANNI SUL TATAMI</span></td><td>64 / 48 px</td><td>800 · 1.0</td></tr>
+  </table>
+  <div class="foot"><span>AnacondaBJJ Academy</span><span>Brand guidelines · 7</span></div>
+</section>
+
+<!-- 8 LAYOUT & SHAPE -->
+<section class="page">
+  <span class="eyebrow">06 · Layout, forme e pattern</span>
+  <h2>Angoli vivi, ritmo scuro/chiaro</h2>
+  <div class="cols c3" style="gap:8mm">
+    <div>
+      <h3>Griglia</h3>
+      <div style="display:grid;grid-template-columns:repeat(12,1fr);gap:1.5mm;height:28mm;margin-bottom:3mm">
+        <div style="background:rgba(30,122,70,.18)"></div><div style="background:rgba(30,122,70,.18)"></div><div style="background:rgba(30,122,70,.18)"></div><div style="background:rgba(30,122,70,.18)"></div><div style="background:rgba(30,122,70,.18)"></div><div style="background:rgba(30,122,70,.18)"></div><div style="background:rgba(30,122,70,.18)"></div><div style="background:rgba(30,122,70,.18)"></div><div style="background:rgba(30,122,70,.18)"></div><div style="background:rgba(30,122,70,.18)"></div><div style="background:rgba(30,122,70,.18)"></div><div style="background:rgba(30,122,70,.18)"></div>
+      </div>
+      <p>12 colonne, contenitore 1200 px, gutter 24 px. Mobile: 4 colonne, margini 20 px. Sezioni con 96 px sopra e sotto (64 px su mobile).</p>
+      <p class="muted" style="margin-top:3mm">Spaziature: 4 · 8 · 12 · 16 · 24 · 32 · 48 · 64 · 96 · 128</p>
+    </div>
+    <div>
+      <h3>Ritmo delle sezioni</h3>
+      <div style="display:flex;flex-direction:column;gap:1mm;margin-bottom:3mm">
+        <div style="height:6mm;background:var(--jungle)"></div><div style="height:6mm;background:var(--jungle);opacity:.85"></div><div style="height:6mm;background:var(--mat);border:1px solid var(--stone)"></div><div style="height:6mm;background:var(--jungle)"></div><div style="height:6mm;background:var(--green)"></div><div style="height:6mm;background:var(--jungle)"></div><div style="height:6mm;background:var(--mat);border:1px solid var(--stone)"></div><div style="height:6mm;background:var(--jungle)"></div>
+      </div>
+      <p>Alterna fasce Jungle Black e Mat White. Una sola fascia verde, per il form di prova.</p>
+    </div>
+    <div>
+      <h3>Forme</h3>
+      <div style="display:flex;gap:4mm;align-items:center;margin-bottom:3mm">
+        <div style="width:18mm;height:12mm;background:var(--green);border-radius:4px"></div>
+        <div style="width:18mm;height:12mm;background:var(--jungle);border-radius:8px"></div>
+        <svg width="16mm" height="14mm" viewBox="0 0 56 48"><path d="M14 0h28l14 24-14 24H14L0 24z" fill="var(--lime)" stroke="var(--jungle)" stroke-width="3"/></svg>
+      </div>
+      <p>Raggi 4 px (bottoni, campi) e 8 px (card). Niente forme morbide o a pillola sui bottoni. L'esagono è il motivo secondario: badge, icone, pattern.</p>
+    </div>
+  </div>
+  <div class="scales" style="margin-top:8mm;height:42mm;border-radius:2mm;display:flex;align-items:center;padding:0 10mm;color:var(--mat)">
+    <div><span class="eyebrow">Pattern a scaglie</span><p style="color:var(--moss)">Esagoni lime al 7% su Jungle Black. Solo come texture di sfondo: copertine, hero, social.</p></div>
+  </div>
+  <div class="foot"><span>AnacondaBJJ Academy</span><span>Brand guidelines · 8</span></div>
+</section>
+
+<!-- 9 COMPONENTS -->
+<section class="page dark">
+  <span class="eyebrow">07 · Componenti</span>
+  <h2>I mattoni della pagina</h2>
+  <div class="cols c3" style="gap:6mm">
+    <div class="card">
+      <h3>Bottoni</h3>
+      <div style="display:flex;flex-direction:column;gap:3mm;align-items:flex-start">
+        <span class="btn b-lime">Prenota la lezione gratuita</span>
+        <span class="btn b-ghost">Chiamaci</span>
+        <span class="btn b-green">Scopri i programmi</span>
+      </div>
+      <p class="muted" style="margin-top:3mm;font-size:8.5pt">Lime = CTA principale su scuro. Verde = CTA su chiaro. Contorno = secondario. Hover: lime → #C7F06A.</p>
+    </div>
+    <div class="card">
+      <span class="tag" style="margin-bottom:3mm">LEZIONE DI PROVA · TUTTE LE ETÀ</span>
+      <h3 style="margin-top:3mm">Fascia di fiducia</h3>
+      <div style="display:flex;gap:3mm;align-items:flex-start;margin-bottom:3mm">
+        <svg width="9mm" height="8mm" viewBox="0 0 56 48" style="flex:none"><path d="M14 0h28l14 24-14 24H14L0 24z" fill="none" stroke="#B5E64B" stroke-width="4"/></svg>
+        <div><b style="font-family:var(--d);text-transform:uppercase;font-size:12pt">Istruttori cintura nera</b><p class="muted" style="font-size:8.5pt">Ogni classe ha un percorso per il primo giorno.</p></div>
+      </div>
+      <div style="display:flex;gap:3mm;align-items:flex-start">
+        <span style="color:var(--gold);font-size:12pt;flex:none">★★★★★</span>
+        <div><b style="font-family:var(--d);text-transform:uppercase;font-size:12pt">Recensioni</b><p class="muted" style="font-size:8.5pt">Le stelle sono sempre Belt Gold.</p></div>
+      </div>
+    </div>
+    <div class="card" style="background:#fff;color:var(--jungle);border:none">
+      <h3>Form prova gratuita</h3>
+      <div style="font-size:8pt;font-weight:500;margin-bottom:1mm">Nome</div>
+      <div style="border:1px solid var(--stone);border-radius:4px;height:8mm;margin-bottom:2.5mm"></div>
+      <div style="font-size:8pt;font-weight:500;margin-bottom:1mm">Telefono</div>
+      <div style="border:1px solid var(--green);box-shadow:0 0 0 3px rgba(30,122,70,.3);border-radius:4px;height:8mm;margin-bottom:2.5mm"></div>
+      <div style="font-size:8pt;font-weight:500;margin-bottom:1mm">Programma</div>
+      <div style="border:1px solid var(--stone);border-radius:4px;height:8mm;margin-bottom:3mm"></div>
+      <span class="btn b-green" style="font-size:10pt;display:block;text-align:center">Scegli il tuo orario</span>
+    </div>
+    <div class="card" style="background:#fff;color:var(--jungle);border:none;border-top:4px solid var(--green)">
+      <span class="eyebrow" style="color:var(--green)">4–7 anni</span>
+      <h3>Baby Anaconda</h3>
+      <ul class="yes"><li>Coordinazione e disciplina</li><li>Gioco e rispetto</li><li>Genitori benvenuti</li></ul>
+    </div>
+    <div class="card">
+      <h3>Percorso cinture</h3>
+      <div style="display:flex;height:7mm;border-radius:1mm;overflow:hidden;margin:3mm 0">
+        <div style="flex:1;background:#F5F4EE"></div><div style="flex:1;background:#2457A6"></div><div style="flex:1;background:#6B3FA0"></div><div style="flex:1;background:#6B4423"></div><div style="flex:1;background:#0D110E;border:1px solid rgba(245,244,238,.3)"></div>
+      </div>
+      <p class="muted" style="font-size:8.5pt">Bianca · Blu · Viola · Marrone · Nera. Si usa per raccontare il percorso, non come decorazione.</p>
+    </div>
+    <div class="card">
+      <h3>FAQ</h3>
+      <div style="display:flex;justify-content:space-between;border-bottom:1px solid rgba(245,244,238,.12);padding:2mm 0;font-family:var(--d);font-weight:700;text-transform:uppercase"><span>Devo essere in forma?</span><span class="lime">−</span></div>
+      <p class="muted" style="font-size:8.5pt;padding:2mm 0">No. Ti alleni per metterti in forma, non il contrario.</p>
+      <div style="display:flex;justify-content:space-between;border-bottom:1px solid rgba(245,244,238,.12);padding:2mm 0;font-family:var(--d);font-weight:700;text-transform:uppercase"><span>Cosa devo portare?</span><span class="lime">+</span></div>
+    </div>
+  </div>
+  <div class="foot"><span>AnacondaBJJ Academy</span><span>Brand guidelines · 9</span></div>
+</section>
+
+<!-- 10 IMAGERY & MOTION -->
+<section class="page">
+  <span class="eyebrow">08 · Fotografia e movimento</span>
+  <h2>Persone vere, prese vere</h2>
+  <div class="cols c2" style="gap:12mm">
+    <div>
+      <div style="height:48mm;border-radius:2mm;background:linear-gradient(180deg,rgba(13,17,14,.3),rgba(13,17,14,.9)),radial-gradient(circle at 20% 0%,rgba(30,122,70,.6),transparent 60%),linear-gradient(135deg,#5a5a52,#2a2c28);display:flex;align-items:flex-end;padding:5mm;color:var(--mat);margin-bottom:4mm">
+        <div><span class="eyebrow" style="color:var(--lime)">Trattamento hero</span><p style="font-size:8.5pt;color:var(--moss)">Foto -15% saturazione, +10% contrasto, overlay Jungle Black dal basso, glow verde in alto.</p></div>
+      </div>
+      <div class="cols c2" style="gap:5mm">
+        <div><h3>Sì</h3><ul class="yes"><li>Istruttore che spiega a un principiante</li><li>Bambini che si salutano</li><li>Primo piano di una presa al bavero</li><li>Allacciatura della cintura</li><li>Foto di gruppo a fine lezione</li></ul></div>
+        <div><h3>No</h3><ul class="no"><li>Foto stock in posa</li><li>Sangue e volti tumefatti</li><li>Gabbie e immagini da fight club</li><li>Serpenti veri in foto</li></ul></div>
+      </div>
+    </div>
+    <div>
+      <h3>Movimento</h3>
+      <table style="margin-bottom:5mm">
+        <tr><td>Easing</td><td><code>cubic-bezier(0.2, 0.8, 0.2, 1)</code></td></tr>
+        <tr><td>Durate</td><td>150 ms veloce · 250 ms base · 450 ms lento</td></tr>
+        <tr><td>Ingresso sezioni</td><td>Fade + salita di 12 px</td></tr>
+        <tr><td>Bottoni</td><td>Schiarisce e sale di 1 px</td></tr>
+        <tr><td>Numeri</td><td>Contatore al primo scroll</td></tr>
+        <tr><td>Accessibilità</td><td>Con <code>prefers-reduced-motion</code> solo opacità</td></tr>
+      </table>
+      <div style="background:var(--jungle);border-radius:2mm;padding:6mm;color:var(--mat)">
+        <span class="eyebrow" style="color:var(--lime)">Firma animata</span>
+        <div style="font-family:var(--d);font-weight:800;font-size:26pt;text-transform:uppercase;line-height:1">Stringi la presa</div>
+        <svg viewBox="0 0 300 20" style="width:85mm;display:block;margin-top:1mm"><path d="M2 12c30-14 50 10 90 0s60-12 100-2 60 6 100-4" fill="none" stroke="#B5E64B" stroke-width="5" stroke-linecap="round"/></svg>
+        <p style="color:var(--moss);font-size:8.5pt;margin-top:2mm">Una linea lime si avvolge sotto il titolo della hero (stroke-dashoffset, 600 ms).</p>
+      </div>
+      <p class="muted" style="margin-top:4mm;font-size:8.5pt">Icone: linea 2 px (Lucide o simili), lime su scuro, verde su chiaro.</p>
+    </div>
+  </div>
+  <div class="foot"><span>AnacondaBJJ Academy</span><span>Brand guidelines · 10</span></div>
+</section>
+
+<!-- 11 VOICE -->
+<section class="page dark">
+  <span class="eyebrow">09 · Tono di voce</span>
+  <h2>Un coach, non un fight club.</h2>
+  <div class="cols c3" style="gap:7mm">
+    <div>
+      <h3>Personalità</h3>
+      <div style="display:flex;flex-wrap:wrap;gap:2mm;margin-bottom:5mm">
+        <span class="tag">DIRETTA</span><span class="tag">CALMA E SICURA</span><span class="tag">ACCOGLIENTE</span><span class="tag">TECNICA SENZA GERGO</span>
+      </div>
+      <h3>Principi</h3>
+      <ul class="yes">
+        <li>Frasi brevi, imperativo nelle CTA</li>
+        <li>Diamo del tu</li>
+        <li>Rispondiamo alle paure prima che vengano dette</li>
+        <li>Numeri concreti al posto degli aggettivi</li>
+        <li>Termini tecnici spiegati la prima volta</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Parole sì</h3>
+      <p style="margin-bottom:4mm">tecnica · leva · controllo · percorso · tatami · squadra · prima lezione gratuita · tutti i livelli</p>
+      <h3>Parole no</h3>
+      <p style="margin-bottom:4mm;text-decoration:line-through;color:var(--moss)">distruggere · massacrare · guerriero alpha · no pain no gain · garantito</p>
+      <h3>CTA</h3>
+      <ul><li>Prenota la lezione gratuita</li><li>Scegli il tuo orario</li><li>Chiamaci</li><li>Vieni a vedere una lezione</li></ul>
+    </div>
+    <div class="card">
+      <span class="eyebrow">Esempi</span>
+      <div style="font-family:var(--d);font-weight:800;font-size:19pt;text-transform:uppercase;line-height:1;margin-bottom:3mm">Stringi la tua prima presa. La lezione di prova è <span class="lime">gratis</span>.</div>
+      <p style="margin-bottom:4mm">Brazilian Jiu Jitsu per bambini, ragazzi e adulti. Nessuna esperienza e nessuna attrezzatura richiesta: al resto pensiamo noi.</p>
+      <div style="border-top:1px solid rgba(245,244,238,.12);padding-top:3mm">
+        <b style="font-family:var(--d);text-transform:uppercase">Devo essere in forma per iniziare?</b>
+        <p class="muted" style="font-size:9pt">No. Ti alleni per metterti in forma, non il contrario. La prima lezione segue il tuo ritmo.</p>
+      </div>
+    </div>
+  </div>
+  <div class="foot"><span>AnacondaBJJ Academy</span><span>Brand guidelines · 11</span></div>
+</section>
+
+<!-- 12 LANDING -->
+<section class="page">
+  <span class="eyebrow">10 · Struttura della landing</span>
+  <h2>La pagina della prova gratuita</h2>
+  <div class="cols" style="grid-template-columns:62mm 1fr;gap:10mm">
+    <div style="border:1px solid var(--stone);border-radius:2mm;overflow:hidden;font-family:var(--d);font-weight:700;font-size:7.5pt;text-transform:uppercase;letter-spacing:.08em">
+      <div style="background:#fff;padding:2mm 3mm;border-bottom:1px solid var(--stone)">Header</div>
+      <div style="background:var(--jungle);color:var(--lime);height:24mm;padding:2mm 3mm">Hero</div>
+      <div style="background:var(--graphite);color:var(--mat);height:10mm;padding:2mm 3mm">Fiducia</div>
+      <div style="background:var(--mat);height:16mm;padding:2mm 3mm">Programmi</div>
+      <div style="background:var(--jungle);color:var(--mat);height:11mm;padding:2mm 3mm">Percorso</div>
+      <div style="background:var(--green);color:#fff;height:18mm;padding:2mm 3mm">Form prova</div>
+      <div style="background:var(--jungle);color:var(--gold);height:10mm;padding:2mm 3mm">Recensioni</div>
+      <div style="background:var(--mat);height:12mm;padding:2mm 3mm">FAQ</div>
+      <div style="background:var(--jungle);color:var(--moss);height:9mm;padding:2mm 3mm">Footer</div>
+    </div>
+    <table>
+      <tr><th style="width:8mm">#</th><th style="width:32mm">Sezione</th><th style="width:34mm">Fondo</th><th>Trattamento</th></tr>
+      <tr><td>1</td><td><b>Header</b></td><td>White / Jungle</td><td>Telefono e orari, logo, menu, bottone lime "Prova gratis". Sticky.</td></tr>
+      <tr><td>2</td><td><b>Hero</b></td><td>Foto + overlay</td><td>Eyebrow verde, titolo display con una parola lime, CTA lime + "Chiamaci".</td></tr>
+      <tr><td>3</td><td><b>Fiducia</b></td><td>Jungle Black</td><td>3 card: cintura nera, per principianti, recensioni con stelle oro.</td></tr>
+      <tr><td>4</td><td><b>Programmi</b></td><td>Mat White</td><td>Baby Anaconda 4–7, Junior 8–13, Adulti Gi, Adulti No-Gi, Private.</td></tr>
+      <tr><td>5</td><td><b>Percorso</b></td><td>Jungle Black</td><td>Barra cinture + 3 passi: prenoti, provi, scegli il piano.</td></tr>
+      <tr><td>6</td><td><b>Form prova</b></td><td>Constrictor Green</td><td>Form bianco in un passo; sotto: "Nessun contratto lungo".</td></tr>
+      <tr><td>7</td><td><b>Recensioni</b></td><td>Jungle Black</td><td>Card con stelle Belt Gold, nome e programma.</td></tr>
+      <tr><td>8</td><td><b>FAQ</b></td><td>Mat White</td><td>Domande di genitori e principianti, accordion.</td></tr>
+      <tr><td>9</td><td><b>Footer</b></td><td>Jungle Black</td><td>Indirizzo, telefono, programmi, orari, logo, social.</td></tr>
+    </table>
+  </div>
+  <div class="foot"><span>AnacondaBJJ Academy</span><span>Brand guidelines · 12</span></div>
+</section>
+
+<!-- 13 TOKENS -->
+<section class="page dark">
+  <span class="eyebrow">11 · Token CSS</span>
+  <h2>Pronti da incollare</h2>
+  <div class="cols c2" style="gap:10mm">
+<pre class="card" style="font-size:9pt;line-height:1.6;color:var(--mat)">:root {
+  <span class="lime">--color-jungle</span>:     #0D110E;
+  <span class="lime">--color-graphite</span>:   #1C221E;
+  <span class="lime">--color-green</span>:      #1E7A46;
+  <span class="lime">--color-green-dark</span>: #145C33;
+  <span class="lime">--color-lime</span>:       #B5E64B;
+  <span class="lime">--color-lime-hover</span>: #C7F06A;
+  <span class="lime">--color-gold</span>:       #D9A441;
+  <span class="lime">--color-moss</span>:       #9AA39C;
+  <span class="lime">--color-ash</span>:        #6B716C;
+  <span class="lime">--color-stone</span>:      #E3E2DA;
+  <span class="lime">--color-mat</span>:        #F5F4EE;
+  <span class="lime">--color-white</span>:      #FFFFFF;
+}</pre>
+<pre class="card" style="font-size:9pt;line-height:1.6;color:var(--mat)">:root {
+  <span class="lime">--font-display</span>: 'Barlow Condensed',
+      'Arial Narrow', Impact, sans-serif;
+  <span class="lime">--font-body</span>: Inter, system-ui,
+      -apple-system, 'Segoe UI', sans-serif;
+  <span class="lime">--radius-sm</span>:   4px;
+  <span class="lime">--radius-md</span>:   8px;
+  <span class="lime">--container</span>:   1200px;
+  <span class="lime">--ease</span>: cubic-bezier(0.2, 0.8, 0.2, 1);
+  <span class="lime">--shadow-card</span>: 0 10px 30px
+      rgba(13, 17, 14, 0.18);
+}
+
+<span style="color:var(--moss)">/* Google Fonts */</span>
+family=Barlow+Condensed:wght@600;700;800
+&amp;family=Inter:wght@400;500;600;700</pre>
+  </div>
+  <p class="muted" style="margin-top:5mm">Fonte unica: <code>brand/anacondabjj-brand-guidelines.json</code> (chiave <code>css_tokens</code>).</p>
+  <div class="foot"><span>AnacondaBJJ Academy</span><span>Brand guidelines · 13</span></div>
+</section>
+
+</body>
+</html>

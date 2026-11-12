@@ -1,0 +1,229 @@
+{
+  "meta": {
+    "brand": "AnacondaBJJ Academy",
+    "short_name": "AnacondaBJJ",
+    "version": "1.0.0-prototype",
+    "date": "2026-11-12",
+    "language": "it",
+    "sector": "Accademia di Brazilian Jiu Jitsu (Gi e No-Gi), bambini, ragazzi e adulti",
+    "positioning": "L'accademia dove la tecnica stringe più della forza. Jiu Jitsu serio, ambiente accogliente, percorso chiaro dalla prima lezione alla cintura nera.",
+    "tagline": "Stringi. Controlla. Cresci.",
+    "tagline_alt": ["Tecnica che stringe.", "La prima lezione è gratis. Il resto è disciplina."],
+    "name_story": "L'anaconda non colpisce: avvolge, controlla, stringe. È la metafora del Jiu Jitsu — leva e pressione al posto della forza bruta. Richiama anche l'Anaconda choke, uno strangolamento classico del grappling.",
+    "references": [
+      {"name": "Sampson Jiu Jitsu Academy — pagina trial", "url": "https://sampson-jiu-jitsu-academy.pages.dev/trial/", "taken": "Titoli condensati maiuscoli (Barlow Condensed 800) + Inter per il testo, un solo colore d'accento forte, hero fotografica scura, fasce di fiducia (cintura, recensioni, beginner friendly), form di prova gratuita in un passo, FAQ per genitori e principianti, footer con programmi per età."},
+      {"name": "University of Jiu Jitsu (via Market Muscles)", "url": "https://marketmuscles.com/?p=6505", "taken": "Distinguersi con un colore non rosso: il verde dà identità propria in un settore dominato da rosso/nero."},
+      {"name": "Endless Fight Jiu Jitsu (Contra)", "url": "https://contra.com/p/sLErllce-endless-fight-jiu-jitsu", "taken": "Identità pensata per estendersi a kimono, patch e materiali stampati: il simbolo deve funzionare a un colore e ricamato."},
+      {"name": "Gracie Barra (Canva case study)", "url": "https://www.canva.com/business/case-studies/gracie-barra/", "taken": "Coerenza: template e regole semplici che chiunque in palestra possa riusare sui social."}
+    ],
+    "status_note": "Brand nuovo ispirato ai riferimenti, non estratto da un sito esistente. Colori, logo, tono e regole sono proposte da validare con la palestra."
+  },
+
+  "logo": {
+    "concept": "Esagono (scaglia di serpente e forma da patch) con una A maiuscola: un'anaconda verde lime passa sopra la gamba sinistra e dietro quella destra della A, come in una presa che si chiude.",
+    "files": {
+      "symbol": "assets/anaconda-symbol.svg",
+      "horizontal_on_dark": "assets/anaconda-logo-horizontal-dark.svg",
+      "horizontal_on_light": "assets/anaconda-logo-horizontal-light.svg"
+    },
+    "wordmark": {"text": "ANACONDA BJJ / ACADEMY · JIU JITSU", "font": "Barlow Condensed 800 + 600", "note": "\"BJJ\" sempre in colore d'accento (lime su scuro, verde su chiaro)."},
+    "colorways": [
+      {"name": "Principale", "use": "Default su sfondi scuri e foto scurite", "colors": ["#0D110E", "#1E7A46", "#F5F4EE", "#B5E64B"]},
+      {"name": "Su chiaro", "use": "Documenti, sfondi Mat White", "colors": ["#0D110E", "#1E7A46"]},
+      {"name": "Monocromo", "use": "Ricamo kimono, timbri, incisione", "colors": ["#0D110E"], "note": "Un solo colore pieno; serpente reso in negativo."}
+    ],
+    "clear_space": "Almeno 1/4 della larghezza del simbolo su ogni lato.",
+    "minimum_size": {"symbol_digital_px": 32, "symbol_print_mm": 10, "horizontal_digital_px": 140, "horizontal_print_mm": 35},
+    "dont": [
+      "Non ruotare né deformare l'esagono",
+      "Non cambiare i colori del serpente al di fuori delle varianti",
+      "Non mettere il logo principale su fondi chiari: usa la versione su chiaro",
+      "Non aggiungere ombre, bagliori o contorni",
+      "Non separare il serpente dalla A",
+      "Non scrivere il nome con un altro font"
+    ]
+  },
+
+  "colors": {
+    "primary": [
+      {"name": "Jungle Black", "token": "--color-jungle", "hex": "#0D110E", "rgb": "13, 17, 14", "role": "Fondo principale, testo su chiaro. Nero con una punta di verde, mai #000."},
+      {"name": "Constrictor Green", "token": "--color-green", "hex": "#1E7A46", "rgb": "30, 122, 70", "role": "Colore del brand: bottoni su chiaro, fasce di sezione, link."},
+      {"name": "Venom Lime", "token": "--color-lime", "hex": "#B5E64B", "rgb": "181, 230, 75", "role": "Accento: CTA principale su scuro, evidenziazioni, il serpente. Solo su fondi scuri."}
+    ],
+    "secondary": [
+      {"name": "Deep Green", "token": "--color-green-dark", "hex": "#145C33", "rgb": "20, 92, 51", "role": "Hover dei bottoni verdi, fasce scure alternative."},
+      {"name": "Belt Gold", "token": "--color-gold", "hex": "#D9A441", "rgb": "217, 164, 65", "role": "Solo per traguardi: cinture, gradi, medaglie, recensioni a stelle. Su scuro."}
+    ],
+    "neutrals": [
+      {"name": "Graphite", "token": "--color-graphite", "hex": "#1C221E", "role": "Card e superfici su fondo scuro."},
+      {"name": "Moss", "token": "--color-moss", "hex": "#9AA39C", "role": "Testo secondario su scuro."},
+      {"name": "Ash", "token": "--color-ash", "hex": "#6B716C", "role": "Testo secondario su chiaro."},
+      {"name": "Stone", "token": "--color-stone", "hex": "#E3E2DA", "role": "Bordi e divisori su chiaro."},
+      {"name": "Mat White", "token": "--color-mat", "hex": "#F5F4EE", "role": "Fondo chiaro, colore del tatami. Preferito al bianco puro."},
+      {"name": "White", "token": "--color-white", "hex": "#FFFFFF", "role": "Form e card su Mat White."}
+    ],
+    "transparencies": [
+      {"name": "Overlay hero", "value": "linear-gradient(180deg, rgba(13,17,14,.35) 0%, rgba(13,17,14,.85) 100%)", "use": "Sopra le foto, per leggere il testo bianco."},
+      {"name": "Glow verde", "value": "radial-gradient(circle at 20% 0%, rgba(30,122,70,.45), transparent 60%)", "use": "Vignetta sulle hero (equivalente del gradiente rosso di Sampson)."},
+      {"name": "Linea su scuro", "value": "rgba(245,244,238,.12)", "use": "Bordi e divisori su Jungle Black."}
+    ],
+    "accessible_pairs": [
+      {"text": "#FFFFFF", "on": "#0D110E", "ratio": 19.03, "level": "AAA"},
+      {"text": "#F5F4EE", "on": "#0D110E", "ratio": 17.27, "level": "AAA"},
+      {"text": "#B5E64B", "on": "#0D110E", "ratio": 13.03, "level": "AAA"},
+      {"text": "#B5E64B", "on": "#1C221E", "ratio": 11.09, "level": "AAA"},
+      {"text": "#D9A441", "on": "#0D110E", "ratio": 8.46, "level": "AAA"},
+      {"text": "#9AA39C", "on": "#0D110E", "ratio": 7.33, "level": "AAA"},
+      {"text": "#0D110E", "on": "#B5E64B", "ratio": 13.03, "level": "AAA", "note": "Testo dei bottoni lime"},
+      {"text": "#FFFFFF", "on": "#145C33", "ratio": 8.05, "level": "AAA"},
+      {"text": "#FFFFFF", "on": "#1E7A46", "ratio": 5.35, "level": "AA"},
+      {"text": "#0D110E", "on": "#F5F4EE", "ratio": 17.27, "level": "AAA"},
+      {"text": "#145C33", "on": "#F5F4EE", "ratio": 7.31, "level": "AAA"},
+      {"text": "#1E7A46", "on": "#F5F4EE", "ratio": 4.85, "level": "AA"},
+      {"text": "#6B716C", "on": "#F5F4EE", "ratio": 4.53, "level": "AA"}
+    ],
+    "forbidden_pairs": [
+      {"text": "#B5E64B", "on": "#F5F4EE", "ratio": 1.32, "why": "Illeggibile: il lime vive solo su scuro."},
+      {"text": "#D9A441", "on": "#F5F4EE", "ratio": 2.04, "why": "Illeggibile: l'oro vive solo su scuro."}
+    ],
+    "usage_ratio": {"Jungle Black + Graphite": "55%", "Mat White + Stone": "25%", "Constrictor Green / Deep Green": "12%", "Venom Lime": "6%", "Belt Gold": "2%"},
+    "dont": [
+      "Non usare il rosso: è il colore di quasi tutte le accademie, il verde ci distingue",
+      "Non usare il lime per blocchi di testo lunghi, solo per accenti e CTA",
+      "Non mettere lime o oro su fondo chiaro",
+      "Non usare il nero puro #000000",
+      "Non più di un bottone lime per schermata"
+    ]
+  },
+
+  "typography": {
+    "families": [
+      {"name": "Barlow Condensed", "role": "Titoli, etichette, bottoni, numeri", "weights": [600, 700, 800], "source": "Google Fonts", "fallback": "'Arial Narrow', Impact, sans-serif", "from_reference": true},
+      {"name": "Inter", "role": "Testo, form, FAQ, footer", "weights": [400, 500, 600, 700], "source": "Google Fonts", "fallback": "system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif", "from_reference": true}
+    ],
+    "google_fonts_url": "https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap",
+    "scale": [
+      {"token": "display", "font": "Barlow Condensed", "weight": 800, "size_desktop": "72px", "size_mobile": "44px", "line_height": 0.95, "letter_spacing": "-0.01em", "case": "uppercase", "use": "Titolo hero"},
+      {"token": "h1", "font": "Barlow Condensed", "weight": 800, "size_desktop": "56px", "size_mobile": "40px", "line_height": 1.0, "letter_spacing": "-0.005em", "case": "uppercase"},
+      {"token": "h2", "font": "Barlow Condensed", "weight": 800, "size_desktop": "40px", "size_mobile": "30px", "line_height": 1.05, "case": "uppercase"},
+      {"token": "h3", "font": "Barlow Condensed", "weight": 700, "size_desktop": "24px", "size_mobile": "22px", "line_height": 1.15, "case": "uppercase"},
+      {"token": "eyebrow", "font": "Barlow Condensed", "weight": 700, "size_desktop": "13px", "size_mobile": "12px", "letter_spacing": "0.14em", "case": "uppercase", "use": "Sopratitoli tipo 'LEZIONE DI PROVA · TUTTE LE ETÀ'"},
+      {"token": "body-lg", "font": "Inter", "weight": 400, "size_desktop": "19px", "size_mobile": "17px", "line_height": 1.6},
+      {"token": "body", "font": "Inter", "weight": 400, "size_desktop": "16px", "size_mobile": "16px", "line_height": 1.6},
+      {"token": "small", "font": "Inter", "weight": 500, "size_desktop": "13px", "size_mobile": "13px", "line_height": 1.5},
+      {"token": "button", "font": "Barlow Condensed", "weight": 700, "size_desktop": "18px", "size_mobile": "17px", "letter_spacing": "0.06em", "case": "uppercase"},
+      {"token": "stat", "font": "Barlow Condensed", "weight": 800, "size_desktop": "64px", "size_mobile": "48px", "line_height": 1, "use": "Numeri: anni, iscritti, recensioni"}
+    ],
+    "rules": [
+      "Titoli sempre in maiuscolo, condensati, interlinea stretta",
+      "Una parola chiave del titolo può essere in lime (su scuro) o verde (su chiaro)",
+      "Testo in Inter, mai maiuscolo per paragrafi interi",
+      "Righe di testo tra 45 e 75 caratteri",
+      "Niente corsivo nei titoli"
+    ]
+  },
+
+  "layout": {
+    "grid": "12 colonne, max-width 1200px, gutter 24px; mobile 4 colonne con margini 20px",
+    "spacing_scale_px": [4, 8, 12, 16, 24, 32, 48, 64, 96, 128],
+    "section_padding": {"desktop": "96px 0", "mobile": "64px 0"},
+    "rhythm": "Alternare fasce scure (Jungle Black) e chiare (Mat White); una fascia verde piena al massimo una volta per pagina, per la CTA.",
+    "breakpoints_px": {"sm": 640, "md": 768, "lg": 1024, "xl": 1280}
+  },
+
+  "shape": {
+    "radius": {"none": "0", "sm": "4px", "md": "8px", "pill": "999px"},
+    "rules": [
+      "Bottoni e card con angoli quasi vivi (4px): sport di combattimento, niente forme morbide",
+      "Esagono come motivo grafico secondario (badge, icone, pattern a scaglie a bassa opacità)",
+      "Tagli diagonali di 3° tra sezioni consentiti, massimo uno per pagina"
+    ],
+    "pattern": "Scaglie esagonali Graphite su Jungle Black, opacità 6–10%, solo come texture di sfondo"
+  },
+
+  "components": {
+    "button_primary": {"bg": "#B5E64B", "text": "#0D110E", "hover_bg": "#C7F06A", "radius": "4px", "padding": "16px 28px", "font": "button", "use": "CTA principale su scuro: 'PRENOTA LA LEZIONE GRATUITA'"},
+    "button_primary_on_light": {"bg": "#1E7A46", "text": "#FFFFFF", "hover_bg": "#145C33", "radius": "4px", "padding": "16px 28px"},
+    "button_secondary": {"bg": "transparent", "text": "currentColor", "border": "2px solid currentColor", "radius": "4px", "use": "'CHIAMACI', 'VEDI GLI ORARI'"},
+    "eyebrow_badge": {"bg": "#1E7A46", "text": "#FFFFFF", "radius": "2px", "padding": "6px 10px", "font": "eyebrow"},
+    "trust_card": {"bg": "#1C221E", "border": "1px solid rgba(245,244,238,.12)", "radius": "8px", "icon": "esagono lime 40px", "content": "Titolo h3 + 1–2 righe Inter Moss"},
+    "program_card": {"bg": "#FFFFFF", "border": "1px solid #E3E2DA", "radius": "8px", "top_bar": "4px Constrictor Green", "content": "Nome programma, fascia d'età, 3 punti, link"},
+    "belt_bar": {"description": "Barra orizzontale con i colori delle cinture (bianca, blu, viola, marrone, nera) per mostrare il percorso", "colors": ["#F5F4EE", "#2457A6", "#6B3FA0", "#6B4423", "#0D110E"]},
+    "form": {"bg": "#FFFFFF", "field_border": "1px solid #E3E2DA", "focus_ring": "0 0 0 3px rgba(30,122,70,.35)", "radius": "4px", "label": "Inter 500 14px", "steps": "Un solo passo: nome, telefono, età/programma, orario preferito"},
+    "faq_item": {"divider": "1px solid #E3E2DA", "question": "Barlow Condensed 700 20px maiuscolo", "icon": "+ / − in Constrictor Green"},
+    "review": {"stars": "#D9A441", "bg": "#1C221E", "quote": "Inter 18px", "author": "Barlow Condensed 700 maiuscolo"}
+  },
+
+  "imagery": {
+    "style": "Foto reali in palestra, luce naturale o calda, tanta pelle e tessuto dei kimono, primo piano su prese e mani. Persone vere della palestra, bambini compresi (con liberatoria).",
+    "treatment": "Leggero desaturato (-15%), contrasto +10%, overlay Jungle Black dal basso. Mai filtri colorati verdi pesanti.",
+    "subjects": ["Istruttore che spiega una tecnica a un principiante", "Bambini che si salutano con l'inchino", "Primo piano di una presa al bavero", "Allacciatura della cintura", "Gruppo a fine lezione"],
+    "avoid": ["Foto stock con modelli in posa", "Sangue, volti tumefatti, aggressività esibita", "Gabbie MMA e immagini da fight club", "Serpenti realistici in foto: il serpente vive solo nel logo e nelle grafiche"],
+    "icons": "Line icons 2px (Lucide o simili), angoli vivi, in lime su scuro o verde su chiaro"
+  },
+
+  "motion": {
+    "easing": "cubic-bezier(0.2, 0.8, 0.2, 1)",
+    "durations_ms": {"fast": 150, "base": 250, "slow": 450},
+    "patterns": ["Fade + salita di 12px all'ingresso delle sezioni", "Bottoni: hover schiarisce e solleva di 1px", "Contatori dei numeri al primo scroll"],
+    "signature": "Linea lime che si 'avvolge' sotto il titolo hero (stroke-dashoffset, 600ms), richiamo al serpente",
+    "reduced_motion": "Con prefers-reduced-motion niente animazioni, solo cambi di opacità"
+  },
+
+  "voice": {
+    "personality": ["Diretta", "Calma e sicura", "Accogliente", "Tecnica senza gergo"],
+    "we_are": "Un coach che ti guarda negli occhi e ti dice: ce la fai, cominciamo dalle basi.",
+    "we_are_not": "Un fight club che urla, né un centro fitness che vende miracoli.",
+    "principles": [
+      "Frasi brevi. Verbi all'imperativo nelle CTA.",
+      "Dare del tu.",
+      "Rispondere alle paure prima che vengano dette: esperienza, età, forma fisica, sicurezza dei bambini.",
+      "Numeri concreti al posto degli aggettivi: anni, cinture, recensioni.",
+      "Termini tecnici (guardia, passaggio, sottomissione) spiegati la prima volta."
+    ],
+    "vocabulary_yes": ["tecnica", "leva", "controllo", "percorso", "tatami", "squadra", "prima lezione gratuita", "tutti i livelli"],
+    "vocabulary_no": ["distruggere", "massacrare", "guerriero alpha", "no pain no gain", "garantito"],
+    "ctas": ["Prenota la lezione gratuita", "Scegli il tuo orario", "Chiamaci", "Vieni a vedere una lezione", "Scopri i programmi"],
+    "examples": {
+      "hero": "STRINGI LA TUA PRIMA PRESA. LA LEZIONE DI PROVA È GRATIS.",
+      "subhead": "Brazilian Jiu Jitsu per bambini, ragazzi e adulti. Nessuna esperienza e nessuna attrezzatura richiesta: al resto pensiamo noi.",
+      "trust": "Istruttori cintura nera · Ambiente familiare · Primo giorno guidato",
+      "faq_q": "DEVO ESSERE IN FORMA PER INIZIARE?",
+      "faq_a": "No. Ti alleni per metterti in forma, non il contrario. La prima lezione segue il tuo ritmo."
+    }
+  },
+
+  "landing_sections": [
+    {"order": 1, "section": "Top bar + header", "bg": "#FFFFFF / #0D110E", "treatment": "Telefono e orari a sinistra, logo, menu, bottone lime 'PROVA GRATIS'. Header sticky.", "from_reference": true},
+    {"order": 2, "section": "Hero", "bg": "Foto + overlay Jungle Black + glow verde", "treatment": "Eyebrow badge verde, titolo display con una parola in lime, sottotitolo Inter, CTA lime + secondario 'CHIAMACI'.", "from_reference": true},
+    {"order": 3, "section": "Fascia di fiducia", "bg": "#0D110E", "treatment": "3 trust card (Cintura nera, Per principianti, Recensioni con stelle oro).", "from_reference": true},
+    {"order": 4, "section": "Programmi per età", "bg": "#F5F4EE", "treatment": "Program card: Baby Anaconda (4–7), Junior (8–13), Adulti Gi, Adulti No-Gi, Lezioni private."},
+    {"order": 5, "section": "Il percorso", "bg": "#0D110E", "treatment": "Belt bar + 3 passi: prenoti, provi, scegli il piano."},
+    {"order": 6, "section": "Form prova gratuita", "bg": "#1E7A46", "treatment": "Fascia verde piena, form bianco in un passo, rassicurazioni sotto ('Nessun contratto lungo').", "from_reference": true},
+    {"order": 7, "section": "Recensioni", "bg": "#0D110E", "treatment": "Card recensioni con stelle Belt Gold."},
+    {"order": 8, "section": "FAQ", "bg": "#F5F4EE", "treatment": "Domande di genitori e principianti, accordion.", "from_reference": true},
+    {"order": 9, "section": "Footer", "bg": "#0D110E", "treatment": "Indirizzo, telefono, programmi, orari, logo, social.", "from_reference": true}
+  ],
+
+  "css_tokens": {
+    "--color-jungle": "#0D110E",
+    "--color-graphite": "#1C221E",
+    "--color-green": "#1E7A46",
+    "--color-green-dark": "#145C33",
+    "--color-lime": "#B5E64B",
+    "--color-lime-hover": "#C7F06A",
+    "--color-gold": "#D9A441",
+    "--color-moss": "#9AA39C",
+    "--color-ash": "#6B716C",
+    "--color-stone": "#E3E2DA",
+    "--color-mat": "#F5F4EE",
+    "--color-white": "#FFFFFF",
+    "--font-display": "'Barlow Condensed', 'Arial Narrow', Impact, sans-serif",
+    "--font-body": "Inter, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",
+    "--radius-sm": "4px",
+    "--radius-md": "8px",
+    "--container": "1200px",
+    "--ease": "cubic-bezier(0.2, 0.8, 0.2, 1)",
+    "--shadow-card": "0 10px 30px rgba(13, 17, 14, 0.18)"
+  }
+}
